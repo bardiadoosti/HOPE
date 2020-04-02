@@ -4,8 +4,8 @@ Codes for [**HOPE-Net paper**](https://arxiv.org/pdf/2004.00060.pdf) (CVPR 2020)
 ## Datasets
 To use the datasets used in the paper download [**First-Person Hand Action Dataset**](https://guiggh.github.io/publications/first-person-hands/) and [**HO-3D Dataset**](https://www.tugraz.at/index.php?id=40231) and update the root path in the `make_data.py` file located in each folder and run the `make_data.py` files to generate the `.npy` files.
 
-## BibTeX
-
+## Citation
+Please cite our paper if this code helps your research.
 ```
 @InProceedings{Doosti_2020_CVPR,
 author = {Bardia Doosti and Shujon Naha and Majid Mirbagheri and David Crandall},
