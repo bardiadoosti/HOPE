@@ -38,8 +38,8 @@ def parse_args_function():
     )
     parser.add_argument(
         "--model_def",
-        default='GraphUNet',
-        help="Name of the model 'GraphUNet', 'GraphNet' or 'DenseNet'"
+        default='HopeNet',
+        help="Name of the model 'HopeNet', 'GraphUNet' or 'GraphNet'"
     )
     parser.add_argument(
         "--pretrained_model",
