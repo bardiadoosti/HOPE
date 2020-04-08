@@ -21,6 +21,25 @@ A schematic of our Adaptive Graph U-Net architecture, which is used to estimate 
 ## Datasets
 To use the datasets used in the paper download [**First-Person Hand Action Dataset**](https://guiggh.github.io/publications/first-person-hands/) and [**HO-3D Dataset**](https://www.tugraz.at/index.php?id=40231) and update the root path in the `make_data.py` file located in each folder and run the `make_data.py` files to generate the `.npy` files.
 
+## Test Pretrained Model
+First download [**First-Person Hand Action Dataset**](https://guiggh.github.io/publications/first-person-hands/) and make the `.npy` files. Then download and extract the pretrained model with the comman below.
+```
+wget http://vision.soic.indiana.edu/hopenet_files/checkpoints.tar.gz
+tar -xvf checkpoints.tar.gz
+```
+And then run the model using the pretrained weights.
+```
+python HOPE.py \
+  --input_file ./datasets/fhad/ \
+  --test \
+  --batch_size 64 \
+  --model_def HopeNet \
+  --gpu \
+  --gpu_number 0 \
+  --pretrained_model ./checkpoints/fhad/model-0.pkl
+```
+
+
 ## Citation
 Please cite our paper if this code helps your research.
 ```
