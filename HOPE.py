@@ -143,7 +143,7 @@ if args.train:
                 loss = (lambda_1)*loss2d_init + (lambda_1)*loss2d + (lambda_2)*loss3d
                 val_loss += loss.data
             print('val error: %.5f' % (val_loss / (v+1)))
-        losses.append([(train_loss / (i+1)).cpu().numpy(), (val_loss / (v+1)).cpu().numpy()])
+        losses.append((train_loss / (i+1)).cpu().numpy())
         
         if (epoch+1) % args.snapshot_epoch == 0:
             torch.save(model.state_dict(), args.output_file+str(epoch+1)+'.pkl')
