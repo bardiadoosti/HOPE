@@ -42,7 +42,7 @@ python HOPE.py \
 
 ## Citation
 Please cite our paper if this code helps your research.
-```
+```bibtex
 @InProceedings{Doosti_2020_CVPR,
 author = {Bardia Doosti and Shujon Naha and Majid Mirbagheri and David Crandall},
 title = {HOPE-Net: A Graph-based Model for Hand-Object Pose Estimation},
