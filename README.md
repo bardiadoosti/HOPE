@@ -26,7 +26,7 @@ First download [**First-Person Hand Action Dataset**](https://guiggh.github.io/p
 
 ### GraphUNet
 ```
-wget http://vision.soic.indiana.edu/wp/wp-content/uploads/graphunet.zip
+wget http://vision.soic.indiana.edu/wp/wp-content/uploads/graphunet.tar.gz
 tar -xvf graphunet.tar.gz
 
 python Graph.py \
@@ -36,7 +36,7 @@ python Graph.py \
   --model_def GraphUNet \
   --gpu \
   --gpu_number 0 \
-  --pretrained_model ./checkpoints/graph/model-0.pkl
+  --pretrained_model ./checkpoints/graphunet/model-0.pkl
 ```
 
 <!--
